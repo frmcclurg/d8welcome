@@ -12,6 +12,8 @@ use Drupal\Core\Routing\RouteMatchInterface;
 
 /**
  * Implements hook_help().
+ * 
+ * Displays help for the welcome module via the admin help page.
  */
 function welcome_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
@@ -24,4 +26,19 @@ function welcome_help($route_name, RouteMatchInterface $route_match) {
 
     default:
   }
+}
+
+
+/**
+ * Implements hook_user_login().
+ * 
+ * This hook is called when a user logs in.
+ */
+function welcome_user_login($account) {
+  # get the configuration with the module's configuration name:
+  $config = \Drupal::config('welcome.adminsettings');
+  
+  # Get the value of "welcome_message" property with the get method
+  # then, display the admin configuration setting to the page:
+  drupal_set_message($config->get('welcome_message'));
 }

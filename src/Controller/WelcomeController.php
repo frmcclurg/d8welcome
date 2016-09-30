@@ -39,10 +39,15 @@ class WelcomeController extends ControllerBase {
    *   Return Hello string.
    */
   public function welcome() {
+    # Retrieve the configuration from the admin settings
+    $config = $this->config('welcome.adminsettings');
+
     return [
-      /* A type of markup allows you to specify HTML tags if needed. */
+      # A type of markup allows you to specify HTML tags if needed.
       '#type' => 'markup',
-      '#markup' => $this->t('A friendly <em>howdy</em> to ya\'ll!')
+      # '#markup' => $this->t('A friendly <em>howdy</em> to ya\'ll!')
+      # Retrieve the value currently saved in the admin form
+      '#markup' => $this->t($config->get('welcome_message')),
     ];
   }
 
