@@ -32,3 +32,16 @@ welcome.welcome_controller_welcome:
     # Permissions "access content" means anyone with this permission
     # will be able to use the URI to retrieve and view the content.
     _permission: 'access content'
+
+# File was modified and appended by the Drupal Console command:
+#   drupal generate:form:config --generate-inline --learning
+welcome.admin_settings_form:
+  path: '/admin/config/welcome/adminsettings'
+  defaults:
+    _form: '\Drupal\welcome\Form\AdminSettingsForm'
+    _title: 'Welcome Admin Settings Form'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+

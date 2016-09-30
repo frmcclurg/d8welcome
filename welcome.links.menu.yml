@@ -1,0 +1,7 @@
+welcome.admin_settings_form:
+  title: 'Welcome message configuration title'
+  route_name: welcome.admin_settings_form
+  description: 'This is the administration form for the welcome message.'
+  parent: system.admin_config_system
+  weight: 99
+
