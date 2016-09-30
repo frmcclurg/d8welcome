@@ -24,7 +24,7 @@ class WelcomeBlock extends BlockBase {
   /**
    * {@inheritdoc}
    * 
-   * Build and return a renderable array for the block content.
+   * Build and return a renderable array for a custom block content.
    */
   public function build() {
     # get the configuration with the module's configuration name:

@@ -6,6 +6,9 @@
  * 
  * Code originally created by Drupal Console via the following command:
  *   drupal generate:module --learning
+ *   
+ * The "module.module" file contains any hooks that interrupt or alter
+ * default (core) processing or behavior.
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
