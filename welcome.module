@@ -2,7 +2,10 @@
 
 /**
  * @file
- * Contains welcome.module..
+ * Contains welcome.module.
+ * 
+ * Code originally created by Drupal Console via the following command:
+ *   drupal generate:module --learning
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;

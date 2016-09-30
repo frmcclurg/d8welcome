@@ -1,3 +1,6 @@
+# File originally created by Drupal Console via the following command:
+#   drupal generate:module
+#
 name: welcome
 type: module
 description: Display a friendly welcome message when user logs in.
