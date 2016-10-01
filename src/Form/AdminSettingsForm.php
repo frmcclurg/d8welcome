@@ -12,6 +12,8 @@ use Drupal\Core\Form\FormStateInterface;
  * 
  * This code was originally created by Drupal Console via the command:
  *   drupal generate:form:config --generate-inline --learning
+ *   
+ * This code handles the building of an administration form to set configurations.
  */
 class AdminSettingsForm extends ConfigFormBase {
 

@@ -4,6 +4,8 @@
  * @file
  * Contains WelcomeController.php
  * 
+ * This code generates and returns the page content.
+ * 
  * A controller is the code that is run in response to when the associated
  * URL is specified.
  * 
@@ -18,7 +20,7 @@
  */
 namespace Drupal\welcome\Controller;
 
-/* Use keyword allows you to use other class files when needed.
+/* The keyword "use" allows you to use other class files when needed.
  * In this case, the "WelcomeController" class is extending another
  * class "ControllerBase".  The use statement references the namespace
  * of the "ControllerBase" class.
